@@ -46,6 +46,11 @@ const calculateDiscount = (price, rate, minTotal, isVip, couponCode) => {
   return applies ? finalPrice : price;
 };
 
+const arrowFunction = (parameter1, parameter2, parameter3) => {
+  let result = parameter1 + parameter2 + parameter3;
+  return result;
+}
+
 /**
  * ============================================================================
  * DRILL 3: VISUAL BLOCK EDITING (`Ctrl-v`)
@@ -110,6 +115,10 @@ function processOrder(orderId, inventoryMap, auditLog) {
  * 3. Or use `*` on `tempData` to highlight it, run `ciw` to rename it,
  *    then use `n` and `.` (or `cgn`) to replace occurrences.
  */
+
+const fetchFromCache = (phonetics) => {
+  return phonetics + " received! Roger and Out!";
+};
 
 var tempDataA = fetchFromCache("alpha");
 var tempDataB = fetchFromCache("beta");
